@@ -148,11 +148,13 @@ const Login = () => {
           </div>
 
           <div className="flex justify-center">
-            <ReCAPTCHA
-              sitekey="YOUR_RECAPTCHA_SITE_KEY"
-              onChange={handleCaptchaChange}
-              disabled={locked}
-            />
+            <div className="recaptcha-container">
+              <ReCAPTCHA  
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={handleCaptchaChange}
+                disabled={locked}
+              />
+            </div>
           </div>
 
           {error && (
